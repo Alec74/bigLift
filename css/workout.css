@@ -110,3 +110,41 @@ a:hover > #userIcon {
     content:url("../img/user-solidBlue.svg");
     color: blue;
 }
+
+
+/*Responsive footer*/
+@media screen and (max-width: 1024px){
+    .menu-footer-home{
+        margin-right: 100px;
+    }
+    .menu-footer-profile{
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 666px){
+    .menu-footer-home{
+        margin-right: 50px;
+    }
+    .menu-footer-profile{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 568px){
+    .menu-footer-home{
+        margin-right: 18px;
+    }
+    .menu-footer-profile{
+        margin-left: 18px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .menu-footer-home{
+        margin-right: -20px;
+    }
+    .menu-footer-profile{
+        margin-left: -20px;
+    }
+}
