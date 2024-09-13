@@ -1,0 +1,52 @@
+{
+  "name": "Big Lift",
+  "short_name": "Big Lift",
+  "description": "Tracking workouts made easier",
+  "scope": "/bigLift/",
+  "start_url": "/bigLift/",
+  "background_color": "#173421",
+  "theme_color": "#173421",
+  "display": "standalone", 
+  "icons": [
+      {
+        "src":"/bigLift/img/bell-solidGreen.svg",
+        "type": "image/svg",
+        "sizes":"50x50"
+      },
+      {
+        "src":"/bigLift/img/bell-solidBlue.svg",
+        "type": "image/svg",
+        "sizes":"50x50"
+      },
+      {
+        "src":"/bigLift/img/dumbbell-solidGreen.svg",
+        "type": "image/svg",
+        "sizes":"50x50"
+      },
+      {
+        "src":"/bigLift/img/dumbbell-solidBlue.svg",
+        "type": "image/svg",
+        "sizes":"50x50"
+      },
+      {
+        "src":"/bigLift/img/house-solidGreen.svg",
+        "type": "image/svg",
+        "sizes":"50x50"
+      },
+      {
+        "src":"/bigLift/img/house-solidBlue.svg",
+        "type": "image/svg",
+        "sizes":"50x50"
+      },
+      {
+        "src":"/bigLift/img/user-solidGreen.svg",
+        "type": "image/svg",
+        "sizes":"50x50"
+      },
+      {
+        "src":"/bigLift/img/user-solidBlue.svg",
+        "type": "image/svg",
+        "sizes":"50x50"
+      }
+  ]
+}
