@@ -1,23 +1,29 @@
 body {
-    background-color: #173421;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: #173421;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  color: #93cfa9;
+  font-size: 20px;
 }
 
 /* Header Styles*/
 
-.menu-header-container{
-    background-color: #34764c;
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    top: 0;
-    position: fixed;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 15px;
+.menu-header-container {
+  background-color: #34764c;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 17px;
 }
 
+/*
 .menu-header-content-home{
     margin-left: 20px;
     border-width: 2px;
@@ -25,8 +31,14 @@ body {
     border-style: solid;
     border-radius: 4px;
     padding: 12px;
+}*/
+
+.menu-header-content-title {
+  color: #93cfa9;
+  font-size: 22px;
 }
 
+/*
 .menu-header-content-home:hover{
     border-color: blue;
     cursor: pointer;
@@ -48,103 +60,136 @@ a:hover > #notifIcon {
     margin-right: 20px;
     margin-top: 15px;
     margin-bottom: 4px;
+}*/
+
+/* Quick Start Row */
+
+.title {
+  margin: 165px 2% 20px 2.3%; /*add responsiveness --> 2% instead of 3*/
 }
 
-/*Content card styles*/
-
-.content-card-container{
-    display: flex;
-    justify-content: center;
-    background-color: #34764c;
-    margin: 175px 2% 130px 2%;   /* margin-top 137px borders header with lorem ipsum text*/
-    min-height: 60vh;
-
-    border-radius: 7px;
+.title2 {
+  margin: 10px 2% 20px 2.3%;
 }
 
-.content-card-text{
-    color: #93cfa9;
-    font-size: 20px;
-    margin: 10px 15px 10px 15px;
-    height: auto;
+#folder-plus {
+  float: right;
+  clear: right;
+  margin-left: auto;
+}
+
+a:hover > #folder-plus {
+    content: url("../img/folder-plus-solidBlue.svg");
+    color: blue;
+  }
+
+.card {
+  background-color: #34764c;
+  border-radius: 7px;
+  margin: 20px 2% 25px 2%;
+  padding: 1px 10px 1px 10px;
+}
+
+/* Content card styles */
+
+.content-card-container {
+  display: flex;
+  justify-content: center;
+  background-color: #34764c;
+  margin: 175px 2% 130px 2%; /* margin-top 137px borders header with lorem ipsum text*/
+  min-height: 60vh;
+
+  border-radius: 7px;
+}
+
+.content-card-text {
+  color: #93cfa9;
+  font-size: 20px;
+  margin: 10px 15px 10px 15px;
+  height: auto;
+}
+
+/*Bottom of Page*/
+
+.page-bottom{
+    padding-bottom: 120px;
 }
 
 /*Footer Styles*/
 
-.menu-footer-container{
-    background-color: #34764c;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
+.menu-footer-container {
+  background-color: #34764c;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
-.menu-footer-content{
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 4px;
-    margin-bottom: 15px;
+.menu-footer-content {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 4px;
+  margin-bottom: 15px;
 }
 
 a {
-    color: #93cfa9;
-    text-decoration: none;
+  color: #93cfa9;
+  text-decoration: none;
 }
 
 a:hover {
-    color: blue;
+  color: blue;
 }
 
 a:hover > #homeIcon {
-    content:url("../img/house-solidBlue.svg");
-    color: blue;
+  content: url("../img/house-solidBlue.svg");
+  color: blue;
 }
 
 a:hover > #workoutIcon {
-    content:url("../img/dumbbell-solidBlue.svg");
-    color: blue;
+  content: url("../img/dumbbell-solidBlue.svg");
+  color: blue;
 }
 
 a:hover > #userIcon {
-    content:url("../img/user-solidBlue.svg");
-    color: blue;
+  content: url("../img/user-solidBlue.svg");
+  color: blue;
 }
-
 
 /*Responsive footer*/
-@media screen and (max-width: 1024px){
-    .menu-footer-home{
-        margin-right: 100px;
-    }
-    .menu-footer-profile{
-        margin-left: 100px;
-    }
+@media screen and (max-width: 1024px) {
+  .menu-footer-home {
+    margin-right: 100px;
+  }
+  .menu-footer-profile {
+    margin-left: 100px;
+  }
 }
 
-@media screen and (max-width: 666px){
-    .menu-footer-home{
-        margin-right: 50px;
-    }
-    .menu-footer-profile{
-        margin-left: 50px;
-    }
+@media screen and (max-width: 666px) {
+  .menu-footer-home {
+    margin-right: 50px;
+  }
+  .menu-footer-profile {
+    margin-left: 50px;
+  }
 }
 
-@media screen and (max-width: 568px){
-    .menu-footer-home{
-        margin-right: 18px;
-    }
-    .menu-footer-profile{
-        margin-left: 18px;
-    }
+@media screen and (max-width: 568px) {
+  .menu-footer-home {
+    margin-right: 18px;
+  }
+  .menu-footer-profile {
+    margin-left: 18px;
+  }
 }
 
-@media screen and (max-width: 360px){
-    .menu-footer-home{
-        margin-right: -20px;
-    }
-    .menu-footer-profile{
-        margin-left: -20px;
-    }
+@media screen and (max-width: 360px) {
+  .menu-footer-home {
+    margin-right: -20px;
+  }
+  .menu-footer-profile {
+    margin-left: -20px;
+  }
 }
