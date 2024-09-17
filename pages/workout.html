@@ -1,88 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Workout</title>
-    <link rel="canonical" href="https://Alec74.github.io/bigLift/" />
-    <link rel="manifest" href="/bigLift/manifest.webmanifest" />
-    <link rel="stylesheet" href="../css/workout.css" />
-  </head>
-  <body>
-    <!--Header Menu-->
-    <div class="menu-header-container">
-      <h5 class="menu-header-content-title">Big Lift</h5>
-    </div>
 
-    <!--Page Content-->
-    <div class="title">
-      <p>Quick Start</p>
-    </div>
-    <div class="card">
-      <p>+ Add Completed Workout</p>
-    </div>
-    <div class="card">
-      <p>+ Start Workout</p>
-    </div>
-    <div class="title2">
-      <p id="routines">
-        Routines<a href="#"
-          ><img
-            style="width: 20px; height: 20px; margin-bottom: -3.5px"
-            id="folder-plus"
-            src="../img/folder-plus-solidGreen.svg"
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workout</title>
+  <link rel="canonical" href="https://Alec74.github.io/bigLift/" />
+  <link rel="manifest" href="/bigLift/manifest.webmanifest" />
+  <link rel="stylesheet" href="../css/workout.css" />
+</head>
+
+<body>
+  <!--Old Workout Modal-->
+  <div class="old-workout-modal">
+    <div class="old-workout-modal-content">
+      <div class="old-modal-header">
+        <a id="close-old-workout-modal">
+          <p class="blue-text medium-font blue-hover">Cancel</p>
         </a>
-      </p>
-    </div>
-    <div class="card">
-      <p>New Routine</p>
-    </div>
-    <div class="card2"></div>
-      <p><a href="#"
-        ><img
-          style="width: 20px; height: 20px; margin-bottom: -3.5px"
-          id="caret-right"
-          src="../img/caret-right-solidGreen.svg"
-        />
-      </a>My Routines</p>
-    </div>
-
-    <!--Bottom of page-->
-    <div class="page-bottom"></div>
-
-
-
-    <!--Footer menu-->
-    <div class="menu-footer-container">
-      <h5 class="menu-footer-content menu-footer-home">
-        <a href="../index.html"
-          ><img
-            style="width: 50px; height: 50px; margin-left: -2px"
-            id="homeIcon"
-            src="../img/house-solidGreen.svg"
-          />Home</a
-        >
-      </h5>
-      <h5 class="menu-footer-content">
-        <a href="#"
-          ><img
-            style="width: 50px; height: 50px; margin-left: 12%"
-            id="workoutIcon"
-            src="../img/dumbbell-solidGreen.svg"
-          />Workout
+        <p class="white-text medium-font">Add Exercise</p>
+        <a>
+          <p class="blue-text medium-font blue-hover">Create</p>
         </a>
-      </h5>
-      <h5 class="menu-footer-content menu-footer-profile">
-        <a href="./profile.html"
-          ><img
-            style="width: 50px; height: 50px; margin-left: -1px"
-            id="userIcon"
-            src="../img/user-solidGreen.svg"
-          />Profile
-        </a>
-      </h5>
+      </div>
     </div>
-    <script src="../js/workout.js"></script>
-  </body>
+    <form class="type-exercise">
+      <input class="type-exercise-input" placeholder="Type exercise name" type="text"></input>
+    </form>
+    <div class="old-row1">
+      <p class="green-text">Pick Category</p>
+      <div class="old-inner-row">
+        <div class="old-endurance-container">
+          <a class="person-walking-white-modal endurance" href="#">
+            <img style="width: 40px; height: 40px;" id="person-walking-white"
+              src="../img/person-walking-solidWhite.svg" />
+            <p>Endurance</p>
+          </a>
+        </div>
+        <div class="space"></div>
+        <div class="old-strength-container">
+          <a class="dumbbell-white-modal strength" href="#">
+          <img style="width: 40px; height: 40px;" id="dumbbell-white" src="../img/dumbbell-solidWhite.svg" />
+          <p>Strength</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="old-row2">
+      <p class="green-text" style="margin: 10px 2vw 10px 2vw;">Recent Exercises</p>
+      <div class="populate-recent-exercises">
+        <div class="recent-row1">
+          <p class="recent-exercise-card">test</p><div class="recent-exercise-break"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End of Old Workout Modal-->
+
+  <!--Start Workout Modal-->
+  <div class="start-workout-modal">
+    <!--Modal Content-->
+    <div class="modal-end-header"></div>
+    <div class="start-workout-modal-content">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <h5 class="log">
+            <a class="angle-down-modal" id="close-workout-modal" href="#">
+              <img style="width: 20px; height: 20px; margin-bottom: -3.5px" id="angle-down"
+                src="../img/angle-down-solidWhite.svg" /> </a>Log Workout
+          </h5>
+        </div>
+        <div class="modal-header-right card-btn">
+          <p>Finish</p>
+        </div>
+      </div>
+      <div class="border-modal-workout"></div>
+      <div class="lift-details green-text">
+        <div class="lift-left">
+          <p class="small-font green-text">Duration</p>
+          <p class="small-font blue-text dynamic-time">0s</p>
+        </div>
+        <div class="lift-middle">
+          <p class="small-font green-text">Volume</p>
+          <p class="small-font">0 lbs</p>
+        </div>
+        <div class="lift-right">
+          <p class="small-font green-text">Sets</p>
+          <p class="small-font">0</p>
+        </div>
+      </div>
+      <div class="border-modal-workout"></div>
+      <!-- Get Started -->
+      <div class="modal-body-start">
+        <img style="width: 60px; height: 60px" id="workoutIcon" src="../img/dumbbell-solidGreen.svg" />
+        <p class="large-font">Get Started</p>
+        <p class="medium-font green-text">
+          Add an exercise to start your workout
+        </p>
+      </div>
+      <!--Modal Buttons-->
+      <div class="modal-btn-group">
+        <div class="modal-card-btn1 add-exercise white-text">
+          + Add Exercise
+        </div>
+        <div class="btn-group-row">
+          <div class="modal-card-btn2 settings white-text">Settings</div>
+          <div class="modal-card-btn2 discard-workout red-text">
+            Discard Workout
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End of Start Workout Modal-->
+
+  <!--Header Menu-->
+  <div class="menu-header-container">
+    <h5 class="menu-header-content-title">Big Lift</h5>
+  </div>
+
+  <!--Page Content-->
+  <div class="title">
+    <p>Quick Start</p>
+  </div>
+  <div class="card old-workout-btn">
+    <p>+ Add Old Workout</p>
+  </div>
+  <div class="card start-workout-btn">
+    <p>+ Start Workout</p>
+  </div>
+
+  <div class="title2">
+    <p id="routines">
+      Routines<a href="#"><img style="width: 20px; height: 20px; margin-bottom: -3.5px" id="folder-plus"
+          src="../img/folder-plus-solidWhite.svg" />
+      </a>
+    </p>
+  </div>
+  <div class="card">
+    <p>New Routine</p>
+  </div>
+  <div class="card2">
+    <p class="green-text">
+      <a href="#"><img style="width: 20px; height: 20px; margin-bottom: -3.5px" id="caret-right"
+          src="../img/caret-right-solidGreen.svg" /> </a>My Routines
+    </p>
+  </div>
+
+  <!--Bottom of page-->
+  <div class="page-bottom"></div>
+
+  <!--Footer menu-->
+  <div class="menu-footer-container">
+    <h5 class="menu-footer-content menu-footer-home">
+      <a href="../index.html"><img style="width: 50px; height: 50px; margin-left: -2px" id="homeIcon"
+          src="../img/house-solidGreen.svg" />Home</a>
+    </h5>
+    <h5 class="menu-footer-content">
+      <a href="#"><img style="width: 50px; height: 50px; margin-left: 12%" id="workoutIcon"
+          src="../img/dumbbell-solidGreen.svg" />Workout
+      </a>
+    </h5>
+    <h5 class="menu-footer-content menu-footer-profile">
+      <a href="./profile.html"><img style="width: 50px; height: 50px; margin-left: -1px" id="userIcon"
+          src="../img/user-solidGreen.svg" />Profile
+      </a>
+    </h5>
+  </div>
+  <script src="../js/workout.js"></script>
+</body>
+
 </html>

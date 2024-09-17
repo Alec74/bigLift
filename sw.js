@@ -17,6 +17,9 @@ var URLS = [
   `${GHPATH}/img/house-solidGreen.png`,
   `${GHPATH}/img/user-solidBlue.png`,
   `${GHPATH}/img/user-solidGreen.png`,
+  `${GHPATH}/img/folder-plus-solidGreen.svg`,
+  `${GHPATH}/img/folder-plus-solidBlue.svg`,
+  `${GHPATH}/img/caret-right-solidGreen.svg`,
   `${GHPATH}/js/app.js`
 ]
 
