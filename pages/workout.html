@@ -40,8 +40,8 @@
         <div class="space"></div>
         <div class="old-strength-container">
           <a class="dumbbell-white-modal strength" href="#">
-          <img style="width: 40px; height: 40px;" id="dumbbell-white" src="../img/dumbbell-solidWhite.svg" />
-          <p>Strength</p>
+            <img style="width: 40px; height: 40px;" id="dumbbell-white" src="../img/dumbbell-solidWhite.svg" />
+            <p>Strength</p>
           </a>
         </div>
       </div>
@@ -50,7 +50,8 @@
       <p class="green-text" style="margin: 10px 2vw 10px 2vw;">Recent Exercises</p>
       <div class="populate-recent-exercises">
         <div class="recent-row1">
-          <p class="recent-exercise-card">test</p><div class="recent-exercise-break"></div>
+          <p class="recent-exercise-card">test</p>
+          <div class="recent-exercise-break"></div>
         </div>
       </div>
     </div>
@@ -75,6 +76,7 @@
         </div>
       </div>
       <div class="border-modal-workout"></div>
+      <!--Sub Menu-->
       <div class="lift-details green-text">
         <div class="lift-left">
           <p class="small-font green-text">Duration</p>
@@ -97,6 +99,77 @@
         <p class="medium-font green-text">
           Add an exercise to start your workout
         </p>
+      </div>
+      <!--Modal dynamic content-->
+      <div class="workout-modal-row-container">
+        <!--preview endurance content-->
+        <div class="modal-endurance-row">
+          <p class="row-1">
+            <span class="medium-font"><img class="endurance-image" style="width: 20px; height: 20px;"
+                src="../img/person-walking-solidWhite.svg" />1 Mile run</span>
+
+            <img style="width: 20px; height: 20px; margin-top: 3.5px;" src="../img/ellipsis-vertical-solidWhite.svg" />
+          </p>
+          <p class="green-text">
+          <div class="notes">
+            <textarea  class="notes-input medium-font" placeholder="Add notes here..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+          </div>
+          </p>
+          <p class="row-2">
+            <span class="green-text">SET</span>
+            <span class="green-text">PREVIOUS</span>
+            <span class="green-text">MI</span>
+            <span class="green-text">TIME</span>
+            <span><img style="width: 20px; height: 20px; margin-bottom: -3.5px; visibility: hidden;"
+              src="../img/circle-check-solidGreen.svg" /></span>
+          </p>
+          <p class="row-2">
+            <span class="white-text">1</span>
+            <span class="green-text">1 mi in 9min 38s</span>
+            <span class="green-text">1</span>
+            <span class="green-text">09:40</span>
+            <span><img style="width: 20px; height: 20px; margin-bottom: -3.5px"
+                src="../img/circle-check-solidGreen.svg" /></span>
+          </p>
+          <div class="card">
+            <p>+ Add Set</p>
+          </div>
+
+        </div>
+        <!--preview strength content-->
+        <div class="modal-strength-row"></div>
+          <p class="row-1">
+            <span class="medium-font"><img class="endurance-image" style="width: 20px; height: 20px;"
+                src="../img/dumbbell-solidWhite.svg" />Pushups</span>
+
+            <img style="width: 20px; height: 20px; margin-top: 3.5px;" src="../img/ellipsis-vertical-solidWhite.svg" />
+          </p>
+          <p class="green-text">
+          <div class="notes">
+            <textarea  class="notes-input medium-font" placeholder="Add notes here..." oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+          </div>
+          </p>
+          <p class="row-2">
+            <span class="green-text">SET</span>
+            <span class="green-text">PREVIOUS</span>
+            <span class="green-text">WEIGHT</span>
+            <span class="green-text">REPS</span>
+            <span><img style="width: 20px; height: 20px; margin-bottom: -3.5px; visibility: hidden;"
+              src="../img/circle-check-solidGreen.svg" /></span>
+          </p>
+          <p class="row-2">
+            <span class="white-text">1</span>
+            <span class="green-text" style="margin-left: 48px;">20x1</span>
+            <span class="green-text"  style="margin-left: 30px;">Body</span>
+            <span class="green-text" style="margin-left: 17.5px;">10</span>
+            <span><img style="width: 20px; height: 20px; margin-bottom: -3.5px"
+                src="../img/circle-check-solidGreen.svg" /></span>
+          </p>
+          <div class="card">
+            <p>+ Add Set</p>
+          </div>
+
+        </div>
       </div>
       <!--Modal Buttons-->
       <div class="modal-btn-group">

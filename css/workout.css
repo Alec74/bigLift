@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 
 body {
   background-color: #173421;
@@ -14,12 +14,44 @@ p {
   font-size: 20px;
 }
 
+input {
+  all: unset;
+  color: #93cfa9;
+}
+
+input:focus{
+  color: #93cfa9;
+}
+
+input::placeholder {
+  color: #93cfa9;
+  opacity: 1;
+}
+
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+  background-color: #173421;
+  border: none;
+  color: #93cfa9;
+  white-space: pre-wrap;
+}
+
+textarea:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+textarea::placeholder {
+  opacity: 1;
+}
+
 .green-text {
   color: #93cfa9;
 }
 
 .blue-text {
-  color: #1BA1E2;
+  color: #1ba1e2;
 }
 
 .white-text {
@@ -27,7 +59,11 @@ p {
 }
 
 .red-text {
-  color: #FF4F1E;
+  color: #ff4f1e;
+}
+
+.center-text {
+  text-align: center;
 }
 
 .small-font {
@@ -125,7 +161,7 @@ p {
   flex-flow: column;
 }
 
-.populate-recent-exercises{
+.populate-recent-exercises {
   margin: 20px 0 0 0;
   width: 100vw;
   flex: 1;
@@ -135,20 +171,19 @@ p {
   display: none;
 }
 
-.recent-exercise-card{
+.recent-exercise-card {
   margin: 10px 2vw 10px 2vw;
 }
 
-.recent-exercise-break{
-  padding: .75px 0 .75px 0;
+.recent-exercise-break {
+  padding: 0.75px 0 0.75px 0;
   width: 100vw;
-  background-color: #93CFA9;
+  background-color: #93cfa9;
 }
 
 
 
-/* End of Start Workout Modal*/
-
+/* End of Old Workout Modal*/
 
 /* Start Workout Modal */
 .start-workout-modal {
@@ -185,12 +220,12 @@ p {
 }
 
 .modal-header-left {
-margin-left: 2%;
+  margin-left: 2%;
 }
 
 .modal-header-right {
   margin-right: 2%;
-  }
+}
 
 .angle-down-modal {
   margin-top: 26px;
@@ -198,17 +233,17 @@ margin-left: 2%;
 }
 
 .card-btn {
-  background-color: #1BA1E2;
+  background-color: #1ba1e2;
   padding: 8px 20px 8px 20px;
   border-radius: 7px;
 }
 
-.card-btn:hover{
+.card-btn:hover {
   cursor: pointer;
   background-color: #157cae;
 }
 
-.lift-details{
+.lift-details {
   display: flex;
   justify-content: space-between;
   margin: 100px 2vw 0px 2vw;
@@ -216,15 +251,15 @@ margin-left: 2%;
 
 .modal-end-header {
   position: absolute;
-  background-color: #93CFA9;
+  background-color: #93cfa9;
   margin: 86px 0px 0px 0px;
   padding: 1.5px 100vw 1.5px 0px;
 }
 
 .border-modal-workout {
-  background-color: #93CFA9;
+  background-color: #93cfa9;
   margin: 8px 0px 8px 0px;
-  padding: .75px 100vw .75px 0px;
+  padding: 0.75px 100vw 0.75px 0px;
 }
 
 .modal-body-start {
@@ -235,7 +270,7 @@ margin-left: 2%;
 }
 
 .modal-card-btn1 {
-  background-color: #1BA1E2;
+  background-color: #1ba1e2;
   padding: 10px 20px 10px 20px;
   border-radius: 7px;
 }
@@ -245,7 +280,7 @@ margin-left: 2%;
   border-radius: 7px;
 }
 
-.modal-btn-group{
+.modal-btn-group {
   margin-top: 50px;
 }
 
@@ -269,11 +304,14 @@ margin-left: 2%;
   text-align: center;
 }
 
-.settings:hover, .discard-workout:hover, .add-exercise:hover{
+.settings:hover,
+.discard-workout:hover,
+.add-exercise:hover {
   cursor: pointer;
 }
 
-.settings:hover, .discard-workout:hover {
+.settings:hover,
+.discard-workout:hover {
   background-color: #3b8657;
 }
 
@@ -299,7 +337,36 @@ margin-left: 2%;
   color: #46b4e9;
   cursor: pointer;
 }
-/*End of modal styles*/
+
+.row-1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2vw 0 2vw;
+}
+
+.endurance-image {
+  margin-right: 2vw;
+}
+
+.notes {
+  margin: 5px 2vw 5px 2vw;
+}
+
+.notes-input {
+  width: 96vw;
+}
+
+
+.row-2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 2vw 5px 2vw;
+}
+
+.workout-modal-row-container{
+  display: none;
+}
+/*End of Start Workout Modal styles*/
 
 /* Header Styles*/
 .menu-header-container {
